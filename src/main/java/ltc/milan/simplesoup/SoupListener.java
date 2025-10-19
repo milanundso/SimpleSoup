@@ -20,9 +20,7 @@ public class SoupListener implements Listener {
             e.setCancelled(true);
 
             if (p.getHealth() < p.getMaxHealth()) {
-                double healAmount = Math.min(7.0, p.getMaxHealth() - p.getHealth());
-                double newHealth = Math.min(p.getMaxHealth(), p.getHealth() + healAmount);
-                p.setHealth(newHealth);
+                p.setHealth(Math.min(p.getHealth() + 7, p.getMaxHealth()));
 
                 ItemStack item = e.getItem();
                 item.setType(Material.BOWL);

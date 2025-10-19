@@ -1,0 +1,5 @@
+name: SimpleSoup
+version: '1.0'
+main: ltc.milan.simplesoup.SimpleSoup
+authors: [Milan]
+description: A simple Soup Plugin for minecraft 1.8.8
